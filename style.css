@@ -20,7 +20,7 @@ nav ul{
     justify-content: center;
 }
 nav ul li {
-    life-style: none;
+    list-style: none;
     margin: 0 23px;
 
 }
@@ -34,6 +34,7 @@ nav ul li a:hover{
 }
 .left{
     font-size: 1.5rem;
+    
 }
 .firstSection{
     /* display: flex; */
@@ -48,7 +49,32 @@ nav ul li a:hover{
     font-size: 3rem;
     margin: 70px 0;
 }
-.rightSection img{
+
+
+.btn1{
+    padding : 20px 0;
+    /* margin: 2%; */
+    background-color: #1e2167;
+    color: white;
+    border: 2px solid white;
+    border-radius: 6px;
+    font-size:medium;
+    cursor: pointer;
+
+}
+.btn2{
+    cursor: pointer;;
+    padding : 20px 0;
+    /* marg?in: 2%; */
+    background-color: #1e2167;
+    color: white;
+    border: 2px solid white;
+    border-radius: 6px;
+    font-size:medium;
+    cursor: pointer;
+}
+
+.rightSection .img{
     width: 80%;
 }
 .purple{
@@ -82,5 +108,4 @@ nav ul li a:hover{
     #element{
         color: rgb(170, 100, 235);
     }
-    
     
