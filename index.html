@@ -50,7 +50,8 @@
 
         <section class="secondSection">
         </section>
-
+        <br>
+        <br>
         <!-- About Me -->
         <section class="aboutme">
             <h1 class="aboutme-heading">About Me</h1>
@@ -123,21 +124,22 @@
         <h1 class="project-heading">Projects</h1>
         <!-- <span class="project-subheading">My Projects</span> -->
 
-        <img src="https://github.com/Anurag5086/images/blob/main/blog-1.jpg?raw=true" alt="" height="300" width="400">
-        <img src="https://github.com/Anurag5086/images/blob/main/blog-2.jpg?raw=true" alt="" height="300" width="400">
-        <img src="https://github.com/Anurag5086/images/blob/main/blog-3.jpg?raw=true" alt="" height="300" width="400">
-        <img src="https://github.com/Anurag5086/images/blob/main/blog-4.jpg?raw=true" alt="" height="300" width="400">
-        <img src="https://github.com/Anurag5086/images/blob/main/blog-5.jpg?raw=true" alt="" height="300" width="400">
-        <img src="https://github.com/Anurag5086/images/blob/main/blog-6.jpg?raw=true" alt="" height="300" width="400">
+        <a href="https://shashankkeshri91.github.io/Stock-Market-Dashboard---Javascript-Project---layl85sglvbl/"><img src="SMD.png" alt="Stock-Market-Dashboard---Javascript-Project---layl85sglvbl" height="300" width="520"></a>
+        <a href="http://127.0.0.1:3000/calculator.png"> <img src="calculator.png" alt="Web-Calculator" height="300" width="520"></a>
+        <a href="https://extraordinary-dusk-a98782.netlify.app/"><img src="stopwatch.png" alt="Stopwatch" height="300" width="520"></a>
+        <a href="https://comfy-gingersnap-430745.netlify.app/"><img src="PG.png" alt="Password-Generator" height="300" width="520"></a>
+        <a href="https://musical-beignet-e5c1d4.netlify.app/"><img src="counterApp.jpg" alt="Web-Counter" height="300" width="520"></a>
+        <a href=""><img src="my-portf.png" alt="My-Portfolio" height="300" width="520"></a>
     </section>
 
 
     
     <!-- Contact Form -->
+    <br>
     <section class="contact-form">
         <h1 class="contact-me-heading">Contact Me</h1>
 
-        <form class="form" onsubmit="sendEmail(); reset(); return false()" >
+        <form class="form" onsubmit="sendEmail(); reset(); return false();" >
             <input type="text" name="name" id="Name" placeholder="Your Name" required>
             <input type="email" name="email" id="Email" placeholder="Your Email" required>
             <input type="text" name="number" id="Number" placeholder="Enter Your Mobile No." required>
@@ -151,15 +153,15 @@
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script src="app.js"></script>
     <script src=" https://smtpjs.com/v3/smtp.js"></script>
-    <script>
+    <!-- <script>
         function sendEmail(){
             Email.send({
-                SecureToken: "d1da592f-3e8c-44e5-9985-3b7cf489d2c1",
-                // Host : "smtp.gmail.com",
-                // Username : "shashankkeshri91109@gmail.com",
-                // Password : "4April_2002_",
+                // SecureToken: "d1da592f-3e8c-44e5-9985-3b7cf489d2c1",
+                Host : "smtp.gmail.com",
+                Username : "shashankkeshri91109@gmail.com",
+                Password : "4April_2002_",
                 To : "keshrishashank991@gmail.com",
-                From : document.getElementById("Email"),
+                From : document.getElementById("Email").value,
                 Subject : "New Contact Details For Enquiry",
                 Body :"Name: " + document.getElementById("Name").value  
                     + "<br> Email: " + document.getElementById("Email").value 
@@ -170,6 +172,6 @@
             );
         }
 
-    </script>
+    </script> -->
 </body>
 </html>
