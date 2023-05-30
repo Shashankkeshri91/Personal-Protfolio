@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
@@ -57,7 +58,7 @@
     
             <div class="aboutme-section">
                 <div class="img-section">
-                    <img src="AboutMe.png" alt="About-Me" class="my-img">
+                    <img  width="650px" src="AboutMe.png" alt="About-Img" class="my-img">
                 </div>
     
                 <div class="aboutme-text">
@@ -72,11 +73,103 @@
             </div>
         </section>
 
+           <!-- Skills -->
+    <section class="skills">
+        <h1 class="skill-heading">Skills</h1>
+        <span class="skill-subheading">My Skills</span>
+
+        <div class="skills-section">
+            <div class="skill-bar">
+                <div class="bars">
+                    <div class="bars-box">
+                        <h3>HTML</h3>
+                        <span>94%</span>
+                        <div class="light-bar"></div>
+                        <div class="percent-bar html-bar"></div>
+                    </div>
+    
+                    <div class="bars-box">
+                        <h3>CSS</h3>
+                        <span>94%</span>
+                        <div class="light-bar"></div>
+                        <div class="percent-bar css-bar"></div>
+                    </div>
+    
+                    <div class="bars-box">
+                        <h3>Javascript</h3>
+                        <span>75%</span>
+                        <div class="light-bar"></div>
+                        <div class="percent-bar js-bar"></div>
+                    </div>
+    
+                    <div class="bars-box">
+                        <h3>Java</h3>
+                        <span>89%</span>
+                        <div class="light-bar"></div>
+                        <div class="percent-bar java-bar"></div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="skill-img">
+                <img src="skill.png" alt="Skill-Img">
+            </div>
+        </div>
+    </section>
+
+     <!-- Projects -->
+
+     <section class="projects">
+        <h1 class="project-heading">Projects</h1>
+        <!-- <span class="project-subheading">My Projects</span> -->
+
+        <img src="https://github.com/Anurag5086/images/blob/main/blog-1.jpg?raw=true" alt="" height="300" width="400">
+        <img src="https://github.com/Anurag5086/images/blob/main/blog-2.jpg?raw=true" alt="" height="300" width="400">
+        <img src="https://github.com/Anurag5086/images/blob/main/blog-3.jpg?raw=true" alt="" height="300" width="400">
+        <img src="https://github.com/Anurag5086/images/blob/main/blog-4.jpg?raw=true" alt="" height="300" width="400">
+        <img src="https://github.com/Anurag5086/images/blob/main/blog-5.jpg?raw=true" alt="" height="300" width="400">
+        <img src="https://github.com/Anurag5086/images/blob/main/blog-6.jpg?raw=true" alt="" height="300" width="400">
+    </section>
 
 
+    
+    <!-- Contact Form -->
+    <section class="contact-form">
+        <h1 class="contact-me-heading">Contact Me</h1>
 
+        <form class="form" onsubmit="sendEmail(); reset(); return false()" >
+            <input type="text" name="name" id="Name" placeholder="Your Name" required>
+            <input type="email" name="email" id="Email" placeholder="Your Email" required>
+            <input type="text" name="number" id="Number" placeholder="Enter Your Mobile No." required>
+            <textarea name="message" id="Message" cols="20" rows="10" placeholder="Enter your message....."></textarea>
+            <button class="submit">Send</button>
+        </form>
+    </section>
+</body>
+</html>
     </main>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script src="app.js"></script>
+    <script src=" https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail(){
+            Email.send({
+                SecureToken: "d1da592f-3e8c-44e5-9985-3b7cf489d2c1",
+                // Host : "smtp.gmail.com",
+                // Username : "shashankkeshri91109@gmail.com",
+                // Password : "4April_2002_",
+                To : "keshrishashank991@gmail.com",
+                From : document.getElementById("Email"),
+                Subject : "New Contact Details For Enquiry",
+                Body :"Name: " + document.getElementById("Name").value  
+                    + "<br> Email: " + document.getElementById("Email").value 
+                    +"<br> Phone No.: " + document.getElementById("Number").value 
+                    + "<br> Message: " + document.getElementById("Message").value
+            }).then(
+            message => alert("Message sent Succesfully")
+            );
+        }
+
+    </script>
 </body>
 </html>

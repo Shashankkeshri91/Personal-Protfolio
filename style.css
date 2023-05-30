@@ -156,3 +156,128 @@ nav ul li a:hover{
         margin-left: 5%;
     }
     
+    .skills {
+        text-align: center;
+        background-color: #0f0c27;
+        color: white;
+        padding: 10%;
+    }
+    
+    .bars-box {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 0;
+        margin-bottom: 1rem;
+        /* width: 100%; */
+    }
+    
+    .skills-section {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 100px;
+    }
+    
+    .light-bar {
+        width: 100%;
+        background: hsla(260, 100%, 44%, 0.4);
+        height: 0.5rem;
+        position: absolute;
+        top: 10;
+        bottom: 0;
+    }
+    
+    .skill-bar {
+        width: 40%;
+    }
+    
+    .percent-bar {
+        position: absolute;
+        top: 10;
+        bottom: 0;
+        background-color: #033a80;
+        height: 0.5rem;
+        border-radius: 0.5rem;
+    }
+    
+    .html-bar {
+        width: 94%;
+    }
+    
+    .css-bar {
+        width: 90%;
+    }
+    
+    .js-bar {
+        width: 75%;
+    }
+    
+    .java-bar {
+        width: 89%;
+    }
+    
+    .skill-heading {
+        font-size: 2.5rem;
+    }
+    
+    /* project */
+    .projects {
+        background-color: #0f0c27;
+        color: white;
+        text-align: center;
+    }
+    
+    .project-heading {
+        font-size: 2.5rem;
+        margin-bottom: 50px;
+    }
+    
+    .projects img {
+        border-radius: 20px;
+        margin: 5px;
+    }
+
+    /* Contact */
+    .contact-form {
+        background-color: #0f0c27;
+        color: white;
+    }
+    
+    .form {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        margin: 0 auto;
+    }
+    
+    .form input, textarea {
+        margin-bottom: 10px;
+        border-radius: 10px;
+        background-color: #150b3a;
+        text-decoration: none;
+        border: 0;
+        
+    }
+    
+    .form input, textarea {
+        padding: 10px;
+        color: white;
+    }
+    
+    .contact-me-heading {
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 2.5rem;
+    }
+    
+    .submit {
+        margin-top: 40px;
+        width: 20%;
+        background-color: #033a80;
+        color: white;
+        padding: 10px 15px;
+        margin: 0px auto;
+        cursor: pointer;
+    }
+    
