@@ -68,29 +68,31 @@ nav ul li a:hover{
     margin: 70px 0;
 }
 
-
+/* 
 .btn1{
     padding : 20px 0;
     /* margin: 2%; */
-    background-color: #1e2167;
+    /* background-color: #1e2167;
     color: white;
     border: 2px solid white;
     border-radius: 6px;
     font-size:medium;
     cursor: pointer;
 
-}
+} */ */
+
+/* 
 .btn2{
     cursor: pointer;;
     padding : 20px 0;
     /* marg?in: 2%; */
-    background-color: #1e2167;
+    /* background-color: #1e2167;
     color: white;
     border: 2px solid white;
     border-radius: 6px;
     font-size:medium;
     cursor: pointer;
-}
+} */ */
 
 .rightSection .img{
     width: 80%;
@@ -280,4 +282,42 @@ nav ul li a:hover{
         margin: 0px auto;
         cursor: pointer;
     }
+
+    footer{
+        background-color: #0e0e1a;
+        /* height: 233; */
+    }
+
+    .footer{
+        display: flex;
+        padding: 23px 122px;
+        justify-content: space-evenly;
+    }
+
+    .footer ul{
+        list-style: none;
+    }
+
+    .footer > div{
+        width: 223px;
+    }
+
+    footer .footer-rights{
+        text-align: center;
+        color: gray;
+        padding: 12px 0px;
+    }
+
+    .leftSection .button{
+        padding : 50px 0;
+    }
     
+    .leftSection .btn{
+        padding: 12px;
+        background-color: #1e2167;
+        color: white;
+        border: 2px solid white;
+        border-radius: 6px;
+        font-size: 20px;
+        cursor: pointer;
+    }
