@@ -26,3 +26,7 @@ function sendEmail() {
   });
 }
 sendEmail()
+
+function aboutSlide(){
+  
+}
